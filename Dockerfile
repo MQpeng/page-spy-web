@@ -1,5 +1,12 @@
+FROM node:20 AS web
+ENV YARN_REGISTRY=https://registry.npmjs.org/
+WORKDIR /app
+COPY . .
+RUN yarn install --ignore-optional && yarn run build:client
+
 FROM golang:1.23 AS backend
 WORKDIR /app
+COPY --from=web /app/dist ./dist
 COPY backend/go.mod backend/go.sum ./
 RUN go mod download
 COPY backend/. .

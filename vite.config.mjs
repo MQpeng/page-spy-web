@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
@@ -13,9 +13,9 @@ import {
 export default ({ mode, command }) => {
   const buildDoc = mode === 'doc';
   const isProd = command === 'build';
-
+  const env = loadEnv(mode, process.cwd(), '');
   return defineConfig({
-    base: './',
+    base: env.VITE_BASE_NAME || './',
     build: {
       target: ['chrome100'],
       sourcemap: isProd ? 'hidden' : true,

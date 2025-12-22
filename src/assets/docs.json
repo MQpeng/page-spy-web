@@ -135,6 +135,13 @@
     },
     {
       "language": "en",
+      "route": "/docs/changelog#v2-4-4",
+      "parent": "Changelog",
+      "title": "v2.4.4",
+      "content": " 🆕 Adjusted the interactions in the Network panel; 🐛 Fixed the issue of duplicate data appearing in the Network panel, and corrected the request duration for fetch. "
+    },
+    {
+      "language": "en",
       "route": "/docs/changelog#v2-4-3",
       "parent": "Changelog",
       "title": "v2.4.3",
@@ -1492,6 +1499,13 @@
       "parent": "版本日志",
       "title": "版本日志",
       "content": "import offlineLogImg from '@/assets/image/screenshot/v1.9.2-offline-log-size.png'; import harborRecordStatusImg from '@/assets/image/screenshot/harbor-record-status-zh.gif';"
+    },
+    {
+      "language": "zh",
+      "route": "/docs/changelog#v2-4-4",
+      "parent": "版本日志",
+      "title": "v2.4.4",
+      "content": " 🆕 调整网络面板的交互； 🐛 修复网络面板出现重复数据的问题，以及修复 fetch 的请求时长； "
     },
     {
       "language": "zh",
@@ -2855,6 +2869,13 @@
     },
     {
       "language": "ja",
+      "route": "/docs/changelog#v2-4-4",
+      "parent": "Changelog",
+      "title": "v2.4.4",
+      "content": " 🆕 ネットワークパネルのインタラクションを調整しました。 🐛 ネットワークパネルで重複データが表示される問題を修正し、fetch のリクエスト時間を修正しました。 "
+    },
+    {
+      "language": "ja",
       "route": "/docs/changelog#v2-4-3",
       "parent": "Changelog",
       "title": "v2.4.3",
@@ -4212,6 +4233,13 @@
       "parent": "Changelog",
       "title": "Changelog",
       "content": "import offlineLogImg from '@/assets/image/screenshot/v1.9.2-offline-log-size.png'; import harborRecordStatusImg from '@/assets/image/screenshot/harbor-record-status-en.gif';"
+    },
+    {
+      "language": "ko",
+      "route": "/docs/changelog#v2-4-4",
+      "parent": "Changelog",
+      "title": "v2.4.4",
+      "content": " 🆕 네트워크 패널의 인터랙션을 조정했습니다. 🐛 네트워크 패널에서 중복 데이터가 표시되는 문제와 fetch 요청 시간 계산 문제를 수정했습니다. "
     },
     {
       "language": "ko",
