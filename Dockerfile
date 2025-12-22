@@ -1,5 +1,8 @@
 FROM node:20 AS web
-ENV YARN_REGISTRY=https://registry.npmjs.org/
+ARG REGISTRY=https://registry.npmjs.org/
+ENV YARN_REGISTRY=$REGISTRY
+ARG BASE_NAME=/page-spy-web
+ENV VITE_BASE_NAME=$BASE_NAME
 WORKDIR /app
 COPY . .
 RUN yarn install --ignore-optional && yarn run build:client
