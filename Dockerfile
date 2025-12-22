@@ -1,11 +1,10 @@
 FROM node:20 AS web
-ARG REGISTRY=https://registry.npmjs.org/
-ENV YARN_REGISTRY=$REGISTRY
+WORKDIR /app
+ARG REGISTRY=https://registry.npmjs.org
 ARG BASE_NAME=/page-spy-web
 ENV VITE_BASE_NAME=$BASE_NAME
-WORKDIR /app
 COPY . .
-RUN yarn install --ignore-optional && yarn run build:client
+RUN yarn install --ignore-optional --registry $REGISTRY && yarn run build:client
 
 FROM golang:1.23 AS backend
 WORKDIR /app
