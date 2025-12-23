@@ -1,5 +1,5 @@
-github.com/HuolalaTech/page-spy-api v1.11.0 h1:TGnB82vkqjZRxoWE0Y7/AJuQDXJwxQTTmiijZE+0e1U=
-github.com/HuolalaTech/page-spy-api v1.11.0/go.mod h1:AP2V6CmqbtD+xt+BJojwXmyH250fmDEMii9vaP5qauI=
+github.com/MQpeng/page-spy-api v1.3.2 h1:7u4EsGwQ2or057Ala5+JIKrCkyZQCBYCYPiq18KjLmA=
+github.com/MQpeng/page-spy-api v1.3.2/go.mod h1:o8DGxGG7wX3Mx8Wb4BKSvOFV4lShmH6bcPSvrfiDJhs=
 github.com/aws/aws-sdk-go v1.54.8 h1:+soIjaRsuXfEJ9ts9poJD2fIIzSSRwfx+T69DrTtL2M=
 github.com/aws/aws-sdk-go v1.54.8/go.mod h1:eRwEWoyTWFMVYVQzKMNHWP5/RV4xIUGMQfXQHfHkpNU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

@@ -1,10 +1,10 @@
-module github.com/HuolalaTech/page-spy-web/backend
+module github.com/MQpeng/page-spy-web/backend
 
 go 1.23.0
 
 toolchain go1.23.10
 
-require github.com/HuolalaTech/page-spy-api v1.11.0
+require github.com/MQpeng/page-spy-api v1.3.2
 
 require (
 	github.com/aws/aws-sdk-go v1.54.8 // indirect
