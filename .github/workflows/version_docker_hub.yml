@@ -14,7 +14,7 @@ on:
     tags:
       - "v*.*.*"
 env:
-  USER_NAME: huolalatech
+  USER_NAME: tonyerr
   IMAGE_NAME: page-spy-web
 
 jobs:
