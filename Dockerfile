@@ -20,4 +20,5 @@ RUN chmod +x /app/main || true
 COPY --from=web /app/dist /etc/nginx/html/page-spy-web
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
-CMD ["nginx && /app/main"]
+# Run the app in background and keep nginx in foreground
+CMD ["sh","-c","/app/main & nginx -g 'daemon off;'"]
