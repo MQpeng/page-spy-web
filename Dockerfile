@@ -7,7 +7,6 @@ RUN (yarn install --ignore-optional && npm run build:client) || true
 
 FROM golang:1.23 AS backend
 WORKDIR /app
-COPY --from=web /app/dist ./dist
 COPY backend/go.mod backend/go.sum ./
 RUN go mod download
 COPY backend/. .
